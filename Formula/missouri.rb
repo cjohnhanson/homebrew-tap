@@ -7,22 +7,22 @@ class Missouri < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-v#{version}-aarch64-apple-darwin.tar.gz"
       sha256 "PLACEHOLDER_DARWIN_ARM64"
     end
     on_intel do
-      url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-x86_64-apple-darwin.tar.gz"
+      url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-v#{version}-x86_64-apple-darwin.tar.gz"
       sha256 "PLACEHOLDER_DARWIN_X64"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-aarch64-unknown-linux-musl.tar.gz"
+      url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-v#{version}-aarch64-unknown-linux-musl.tar.gz"
       sha256 "PLACEHOLDER_LINUX_ARM64"
     end
     on_intel do
-      url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-x86_64-unknown-linux-musl.tar.gz"
+      url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-v#{version}-x86_64-unknown-linux-musl.tar.gz"
       sha256 "PLACEHOLDER_LINUX_X64"
     end
   end
