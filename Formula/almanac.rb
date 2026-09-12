@@ -1,29 +1,32 @@
-# Written by the almanac release workflow. Edits here are overwritten.
+# The release workflow renders this template into the tap on every tag:
+# it fills the version and the four checksums from the build's own
+# archives, then pushes the result to cjohnhanson/homebrew-tap. Edit
+# the formula here, never in the tap.
 class Almanac < Formula
   desc "Almanac curates agent skills and indexes them for agents to read"
   homepage "https://github.com/cjohnhanson/almanac"
   license "MIT"
-  version "0.2.3"
+  version "0.2.5"
 
   on_macos do
     on_arm do
       url "https://github.com/cjohnhanson/almanac/releases/download/v#{version}/almanac-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "7c94791166873672bf80cfd381f3b452b06fd3cd92114ce887a2243b9d831c06"
+      sha256 "b094222a0ac9094c0f3509fdb57d3dd3da408ae97d56985c78b25c2799dd339c"
     end
     on_intel do
       url "https://github.com/cjohnhanson/almanac/releases/download/v#{version}/almanac-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "c758de3256d6079e78cd33057ea3807865f8aa350ca5daea2890c2c73e553150"
+      sha256 "492732545f29c47f22b81383d9ef3a0def5f50a4a2d091cab039df66dc552af0"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/cjohnhanson/almanac/releases/download/v#{version}/almanac-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "7ed08d37cde85c2d986222998665d75390a9016a6607f6968e07df09507add34"
+      sha256 "f5d8ba62d6bae53aa9a5f033d9994af4bd4f54197f424e1087bc2b8886c4b24a"
     end
     on_intel do
       url "https://github.com/cjohnhanson/almanac/releases/download/v#{version}/almanac-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "9bb23bd7167a0a114d2fa741b50be7fc4ca9f61bbc91e7e0c45bb5a208ea3fe4"
+      sha256 "abb7746a9be5cf4d3792f03092f290484e14bbfc0f22aed586e2f75a1013e74b"
     end
   end
 
