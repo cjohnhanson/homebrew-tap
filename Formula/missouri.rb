@@ -1,29 +1,32 @@
-# Written by the missouri release workflow. Edits here are overwritten.
+# The release workflow renders this template into the tap on every tag:
+# it fills the version and the four checksums from the build's own
+# archives, then pushes the result to cjohnhanson/homebrew-tap. Edit
+# the formula here, never in the tap.
 class Missouri < Formula
   desc "Show-me-state: e2e testing as directed graphs of filesystem states"
   homepage "https://github.com/cjohnhanson/missouri"
   license "MIT"
-  version "0.2.1"
+  version "0.2.3"
 
   on_macos do
     on_arm do
       url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "877a1d5e833e456e8f6e03b99a940cfc09a95e0a29b362eb0b31ebf4750bc98f"
+      sha256 "76444c8a9cbc60b408cc5650bfdac7062ec1557bec49624983308a050202cc50"
     end
     on_intel do
       url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "65ed79c313dfd3dcc76c74aef31b54ce0b5cf592f117ac965cb78279be931a24"
+      sha256 "75f0d4379879e69aa34c896cbdf7a459943dc2be617b9564bed545579af4a8fd"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "d5fcea79728fe054b617bcc4d601d1ae57e8cb5bc91d3a1f889386663c1b648a"
+      sha256 "fbca4cf7d569a6ce57a6dd92e81cd3981a19ca7c231bf6ba226b48bd175124fd"
     end
     on_intel do
       url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "d60347bb99de084f3695c61d079a3c9489f02df6f29694d7ac5832ac1a4e9471"
+      sha256 "f5708b4c31c540aa6d06e55c67b1d1729c1a347c68221fdad58199eb31e16f44"
     end
   end
 
