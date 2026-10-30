@@ -6,27 +6,27 @@ class Missouri < Formula
   desc "Show-me-state: e2e testing as directed graphs of filesystem states"
   homepage "https://github.com/cjohnhanson/missouri"
   license "MIT"
-  version "0.2.3"
+  version "0.2.4"
 
   on_macos do
     on_arm do
       url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "76444c8a9cbc60b408cc5650bfdac7062ec1557bec49624983308a050202cc50"
+      sha256 "45e8c3fedfce7fcac36f8a2c3320b043bca58a922d1b4ccb5ae274819a3741ba"
     end
     on_intel do
       url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "75f0d4379879e69aa34c896cbdf7a459943dc2be617b9564bed545579af4a8fd"
+      sha256 "da92c8a102afc7f5aa8187c40872a2e797a4c0fc4f8ba7821b1c3a3ae6636ca8"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "fbca4cf7d569a6ce57a6dd92e81cd3981a19ca7c231bf6ba226b48bd175124fd"
+      sha256 "0adff090f9d8c510470725c6995e20fa83d8571af2758e159d557736de22cd48"
     end
     on_intel do
       url "https://github.com/cjohnhanson/missouri/releases/download/v#{version}/missouri-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "f5708b4c31c540aa6d06e55c67b1d1729c1a347c68221fdad58199eb31e16f44"
+      sha256 "b2f6184ce0fcd8c5f6de4e4d16d6ac2edb26ff3eac0e22a4e22e4cb0e43bc45d"
     end
   end
 
