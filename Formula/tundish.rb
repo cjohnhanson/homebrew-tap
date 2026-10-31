@@ -1,28 +1,32 @@
+# The release workflow renders this template into the tap on every tag:
+# it fills the version and the four checksums from the build's own
+# archives, then pushes the result to cjohnhanson/homebrew-tap. Edit
+# the formula here, never in the tap.
 class Tundish < Formula
   desc "Local inbox that agents subscribe to"
   homepage "https://github.com/cjohnhanson/tundish"
   license "MIT"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     on_arm do
       url "https://github.com/cjohnhanson/tundish/releases/download/v#{version}/tundish-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "98ce9410ae0ced4761af79935d3f5c69db1f26eea4c5e1171d4e035eea3cbede"
+      sha256 "36a0133a04c74874fd30f02416547574233e4e4f1065894e146c484c51b95515"
     end
     on_intel do
       url "https://github.com/cjohnhanson/tundish/releases/download/v#{version}/tundish-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "9cbd5d6058bb2dee1a5a7834fe57a4d80ace0af6cda269644bd69664cdb9f521"
+      sha256 "f74dca1f37db94fef2e7eae41e260d5f4d0b41b197fdecad6ab32a0c9276cc0c"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/cjohnhanson/tundish/releases/download/v#{version}/tundish-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "dcc1b3b27504bf6e302f76b7d2d04b9d53384d8ad772aa5125ae2a1461dba22c"
+      sha256 "7a574437c21fe1797ded28fe325a6a4be1d84dd86c18b79dc6f5b43ed9c4b9b0"
     end
     on_intel do
       url "https://github.com/cjohnhanson/tundish/releases/download/v#{version}/tundish-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "dd20593c93c10315f5c25c5850f2888efdec0af918dd225dad5d02faeffc75e9"
+      sha256 "b4b4a66559797012561aa62f37ae79683b0fab6f1f00f9baf10600076fe64a83"
     end
   end
 
