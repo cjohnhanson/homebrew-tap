@@ -6,27 +6,27 @@ class Tisket < Formula
   desc "Plaintext issue tracker for humans and coding agents"
   homepage "https://github.com/cjohnhanson/tisket"
   license "MIT"
-  version "0.2.4"
+  version "0.2.5"
 
   on_macos do
     on_arm do
       url "https://github.com/cjohnhanson/tisket/releases/download/v#{version}/tisket-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "4ee99ba9a15e5a99bda6f5f44e253bbfdf28a4effab7c6e9a45eb4153f315731"
+      sha256 "311a887c64758a807cad0017cc365e2f454a9af085a95e0c7096bf792583b93f"
     end
     on_intel do
       url "https://github.com/cjohnhanson/tisket/releases/download/v#{version}/tisket-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "b71edd00d583254345c7f2ff16921c17a8cd004bfc64f75d0b1d3a4936d49d54"
+      sha256 "2b7a969efa5faf176adfe03c8330e134647b31333bcacc78dfb3bb366b77310e"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/cjohnhanson/tisket/releases/download/v#{version}/tisket-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "862319c2720539e1f78f9cc6ba9ad4ba0efa9caf3260010f4f0e043b6ddc4a8f"
+      sha256 "4896549322e85921bbe39592898a2f9f34610667bf529d1b90e97f192c1e664e"
     end
     on_intel do
       url "https://github.com/cjohnhanson/tisket/releases/download/v#{version}/tisket-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "0e5f39983d091323ed0bd62c081bcb8889e092fe7d5eab89b19050e6072d2c2e"
+      sha256 "7fd5f05f8978a43cf3bdb7bc6cda8d77a07b162e477e0136bc726c6e1d6b1935"
     end
   end
 
